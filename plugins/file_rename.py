@@ -253,7 +253,7 @@ async def auto_rename_files(client, message):
             }
 
             if media_type == "document":
-                await client.send_document(document=file_path, **upload_params)
+                await client.send_video(document=file_path, **upload_params)
             elif media_type == "video":
                 await client.send_video(video=file_path, **upload_params)
             elif media_type == "audio":
